@@ -13,19 +13,19 @@ export class CustomerserviceService {
 customerslist:Array<Customerinterface>=[];
 
 public findAll(): Observable<Customerinterface[]> {
-  return this.http.get<Customerinterface[]>("http://localhost:8080/getdetails");
+  return this.http.get<Customerinterface[]>("https://springbootpostgresql.onrender.com/getdetails");
 }
 
 public addCustomer(data:Customerinterface){
-  return this.http.post<Customerinterface>("http://localhost:8080/saveCustomer",data);
+  return this.http.post<Customerinterface>("https://springbootpostgresql.onrender.com/saveCustomer",data);
 }
 
 public updateCustomer(data:Customerinterface){
-  return this.http.put<Customerinterface>("http://localhost:8080/updateCustomer",data);
+  return this.http.put<Customerinterface>("https://springbootpostgresql.onrender.com/updateCustomer",data);
 }
 
 public deleteCustomer(id:number) {
-  return this.http.delete("http://localhost:8080/deleteCustomer/"+id);
+  return this.http.delete("https://springbootpostgresql.onrender.com/deleteCustomer/"+id);
 }
 
 
