@@ -1,0 +1,18 @@
+button{
+  margin-right: 8px;
+
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-header-row{
+  background-color: rgb(43, 168, 226);
+  height: 40px !important;
+}
+
+.mat-mdc-row:nth-child(even){
+  background-color: rgb(221, 155, 201);
+  height: 30px !important;
+}
